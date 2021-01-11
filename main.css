@@ -1,0 +1,212 @@
+@font-face{
+	font-family: pn;
+	src: url(PragatiNarrow-Regular.otf);
+}
+
+@font-face{
+	font-family: pb;
+	src: url(PragatiNarrow-Bold.otf);
+}
+
+
+
+#header{
+	display: flex;
+
+
+}
+
+#logo {
+	margin-left:3em;
+	width:34%
+}
+
+h2{
+	font-size:2vw;
+}
+#navbar{
+	display: flex;
+	justify-content: flex-end;
+	margin-top:1.6em;
+	margin-right:10em;
+	width:65%;
+}
+
+#navItem{
+	display: inline-block;
+	margin-right:1.5em;
+	font-size:2vw;
+	
+}
+
+#banner{
+	display: flex;
+	background-color: #C4C4C4;
+	height:100%;
+	width:100%;
+	text-align:center;
+	padding:2%;
+	overflow:none;
+}
+
+#circle{
+	margin:auto;
+	width:100px;
+	background-color: #E19999;
+	border-radius: 50%;
+	height:100px;
+	text-align:center;
+	padding:5%;
+}
+
+
+
+#content{
+	display:flex;
+	font-size:1.75vw;
+	flex:2;
+	margin-top:0.75em;
+	margin-left:2em;
+	margin-right:2em;
+	text-align:justify;
+}
+
+#col1{
+	margin-right:2em;
+	
+}
+
+#col2{
+	
+}
+
+
+#col1 > h3 , #col2 > h3{
+	margin-top:0;
+	font-size: 2.5vw;
+}
+
+p {
+	margin-top:0;
+	padding-top:0;
+	margin-bottom:0;
+}
+
+#ximage{
+	height: 34%;
+	background-color: #C4C4C4;
+	
+}
+
+
+#footer{
+	display: none;
+}
+
+h2, h3 {
+	font-family:pb;
+}
+
+h3{
+	margin-bottom:0;
+}
+
+a {
+	color:black;
+	text-decoration: none;
+}
+html, body{
+	font-family:pn;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
+
+@media (max-width: 800px) {
+	 #content{
+		 flex-direction:column;
+		 font-size: 20px;
+	 }
+	 
+	 #header{
+		 flex-direction:column;
+
+	 }
+	 #banner{
+		 height:200px;
+	 }
+
+	 
+	 #ximage{
+		height: 140px;
+		background-color: #C4C4C4;	
+	}
+
+	#navbar{
+		justify-content:space-around;
+		width:auto;
+		margin:0;
+		display: flex;
+	}
+
+	#logo{
+		width:auto;
+		display:flex;
+		justify-content: center;
+		margin:0;
+	}
+	#col1{
+		margin-top:1.25em;
+		width:100%
+	}
+
+	#col2{
+		margin-top:1.25em;
+	}
+
+	h2{
+		margin-left:0;
+		margin-bottom:0;
+		font-size: 6vw;
+	}
+	
+	h3{
+		font-size: 24px;
+	}
+
+	#navItem{
+		display:flex;
+		margin-right:0;
+		justify-content:space-between;
+		flex-flow: row wrap;
+		font-size: 5vw;
+	}
+
+	#footer{
+		background-color: #C4C4C4;
+		display: flex;
+		flex:2;
+		margin-top: 1em;
+		flex-direction: column;
+		font-size: 5vw;
+		text-align:center;
+	
+	}
+	#footerHead{
+	
+	}
+	
+	#footerItem{
+		display:flex;
+		text-decoration: underline;
+		margin-right: 2em;
+		font-size:3vw;
+		flex-direction: column;
+		
+	}
+
+
+}
+
+
